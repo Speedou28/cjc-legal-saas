@@ -1,22 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "framework": "nextjs",
-  "env": {
-    "ANTHROPIC_API_KEY": {
-      "description": "Anthropic Claude API Key from https://console.anthropic.com/account/keys"
-    },
-    "SENDGRID_API_KEY": {
-      "description": "SendGrid API Key from https://app.sendgrid.com/settings/api_keys"
-    },
-    "NEXTAUTH_SECRET": {
-      "description": "Generate with: openssl rand -base64 32"
-    }
-  },
-  "crons": [
-    {
-      "path": "/api/cron/rgpd-cleanup",
-      "schedule": "0 0 * * *"
-    }
-  ]
+  "framework": "nextjs"
 }
