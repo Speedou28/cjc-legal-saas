@@ -13,11 +13,11 @@ export default function DashboardLayout({
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#c97d42] to-[#b86d32] flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-lg">⚖️</span>
               </div>
-              <Link href="/dashboard" className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
-                LexiConsult
+              <Link href="/dashboard" className="text-xl font-bold bg-gradient-to-r from-[#d89660] to-[#c97d42] bg-clip-text text-transparent">
+                LexiConsulte
               </Link>
             </div>
 

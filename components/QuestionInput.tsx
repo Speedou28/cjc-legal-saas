@@ -95,7 +95,7 @@ export default function QuestionInput({ onSubmit, isLoading = false }: QuestionI
           <div className="mt-2 h-1 bg-[#1a202c] rounded-full overflow-hidden">
             <div
               className={`h-full transition-all duration-300 ${
-                percentFilled > 90 ? 'bg-[#ef4444]' : 'bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]'
+                percentFilled > 90 ? 'bg-[#ef4444]' : 'bg-gradient-to-r from-[#c97d42] to-[#d89660]'
               }`}
               style={{ width: `${percentFilled}%` }}
             />
@@ -136,7 +136,7 @@ export default function QuestionInput({ onSubmit, isLoading = false }: QuestionI
           <button
             type="submit"
             disabled={!question.trim() || isLoading}
-            className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] hover:from-[#2563eb] hover:to-[#1d4ed8] text-white font-semibold rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-[#c97d42] to-[#b86d32] hover:from-[#b86d32] hover:to-[#a85d22] text-white font-semibold rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
           >
             {isLoading ? (
               <>

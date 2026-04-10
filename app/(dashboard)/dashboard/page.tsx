@@ -40,7 +40,7 @@ export default function DashboardPage() {
     <div className="space-y-8">
       {/* Header */}
       <div className="space-y-2">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-[#d89660] to-[#c97d42] bg-clip-text text-transparent">
           Consultation Juridique
         </h1>
         <p className="text-[#cbd5e1] text-lg">
@@ -65,15 +65,15 @@ export default function DashboardPage() {
 
       {/* Detected Domains */}
       {detectedDomains.length > 0 && (
-        <div className="bg-gradient-to-r from-[#1a3a52] to-[#0f2847] border border-[#2d5a7b] rounded-xl p-6">
-          <p className="text-sm font-semibold text-[#60a5fa] mb-4 flex items-center gap-2">
+        <div className="bg-gradient-to-r from-[#3d2818] to-[#2a1810] border border-[#7a5c3d] rounded-xl p-6">
+          <p className="text-sm font-semibold text-[#d89660] mb-4 flex items-center gap-2">
             <span>🏛️</span> Domaines juridiques détectés
           </p>
           <div className="flex flex-wrap gap-3">
             {detectedDomains.map((domain) => (
               <span
                 key={domain}
-                className="px-4 py-2 bg-[#1e3a5f]/60 text-[#60a5fa] rounded-full text-sm font-medium border border-[#2d5a7b] hover:bg-[#1e3a5f] transition-all duration-200"
+                className="px-4 py-2 bg-[#4a3020]/60 text-[#d89660] rounded-full text-sm font-medium border border-[#7a5c3d] hover:bg-[#4a3020] transition-all duration-200"
               >
                 {domain}
               </span>
@@ -91,11 +91,11 @@ export default function DashboardPage() {
           </div>
 
           {/* Model Info Badge */}
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#1e3a5f] to-[#0f2847] border border-[#2d5a7b] rounded-lg px-4 py-3">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#4a3020] to-[#2a1810] border border-[#7a5c3d] rounded-lg px-4 py-3">
             <span className="text-2xl">🤖</span>
             <div>
               <p className="text-xs text-[#94a3b8]">Modèle utilisé</p>
-              <p className="text-[#60a5fa] font-semibold">
+              <p className="text-[#d89660] font-semibold">
                 {response.modelChoice?.toUpperCase()}
                 {response.modelChoice === 'haiku' && ' • Rapide & Économique'}
                 {response.modelChoice === 'sonnet' && ' • Équilibré & Précis'}
