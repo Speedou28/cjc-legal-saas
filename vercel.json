@@ -4,23 +4,17 @@
   "outputDirectory": ".next",
   "framework": "nextjs",
   "nodeVersion": "20.x",
-  "env": [
-    {
-      "key": "ANTHROPIC_API_KEY",
-      "type": "secret",
+  "env": {
+    "ANTHROPIC_API_KEY": {
       "description": "Anthropic Claude API Key from https://console.anthropic.com/account/keys"
     },
-    {
-      "key": "SENDGRID_API_KEY",
-      "type": "secret",
+    "SENDGRID_API_KEY": {
       "description": "SendGrid API Key from https://app.sendgrid.com/settings/api_keys"
     },
-    {
-      "key": "NEXTAUTH_SECRET",
-      "type": "secret",
+    "NEXTAUTH_SECRET": {
       "description": "Generate with: openssl rand -base64 32"
     }
-  ],
+  },
   "crons": [
     {
       "path": "/api/cron/rgpd-cleanup",
