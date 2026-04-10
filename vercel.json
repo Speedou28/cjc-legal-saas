@@ -1,0 +1,30 @@
+{
+  "projectName": "LexiConsult",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "nodeVersion": "20.x",
+  "env": [
+    {
+      "key": "ANTHROPIC_API_KEY",
+      "type": "secret",
+      "description": "Anthropic Claude API Key from https://console.anthropic.com/account/keys"
+    },
+    {
+      "key": "SENDGRID_API_KEY",
+      "type": "secret",
+      "description": "SendGrid API Key from https://app.sendgrid.com/settings/api_keys"
+    },
+    {
+      "key": "NEXTAUTH_SECRET",
+      "type": "secret",
+      "description": "Generate with: openssl rand -base64 32"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/rgpd-cleanup",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}

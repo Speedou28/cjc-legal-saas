@@ -9,12 +9,25 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.87.0",
+    "@sendgrid/mail": "^8.1.6",
+    "@types/next-auth": "^3.13.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.8.0",
+    "date-fns": "^4.1.0",
+    "docx": "^9.6.1",
     "next": "16.2.3",
+    "next-auth": "^5.0.0-beta.30",
+    "pdfkit": "^0.18.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "sharp": "^0.34.5",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
